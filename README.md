@@ -1,8 +1,8 @@
 # pyplot-over-ip
-X11 Forwarding can be tricky to setup if your want to display matplotlib figures on a remote machine. Instead this package simply sends [matplotlib.figure.Figure](https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.html) as pickled python objects over http. If the remote machine is one the same network no additional setup is required. For remote machines on other networks bidirectional ssh port forwarding is recommended. The connection is secured using http basic auth.
+X11 Forwarding can be tricky to setup if your want to display matplotlib figures rendered on a remote machine on your local display. Instead this package simply sends [matplotlib.figure.Figure](https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.html) as pickled python objects over http. If the remote machine is one the same network no additional setup is required. For remote machines on other networks bidirectional ssh port forwarding is recommended. The connection is secured using http basic auth.
 
 ## Installation
-
+The package must be installed on both your local and remote machine.
 ```shell
 pip install git+https://github.com/lorenz-h/pyplot-over-ip.git
 ```
