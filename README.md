@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 import pyplot_over_ip as pltip
 
 # run this once when starting your script.
-pltip.setup("192.168.178.13", "your_secure_password")
+pltip.setup("ip_of_your_display_machine", "your_secure_password")
 
 plt.plot([0.5, 1.0, 3.0], [12.0, 5.0, 8.0])
 pltip.show()
@@ -24,7 +24,7 @@ ax.plot([0.3, 1.1, 6.0], [3.0, 9.0, 4.0])
 pltip.show(fig)
 
 ```
-On your local machine run the receiver:
+To display figures on your local machine run the receiver:
 
 ```shell
 pyplot-over-ip --password your_secure_password
